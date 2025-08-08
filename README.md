@@ -16,13 +16,12 @@ NoteNest is a full-stack **MERN (MongoDB, Express, React, Node.js)** application
 
 ## 🖼️ Screenshots
 
-> Add your screenshots here once UI is finalized:
-
 📌 Login Page 
 ![Login Screenshot](public/screenshorts/login.png)
 
 📌 Signup Page
-![Signup Screenshot](public/screenshots/signup.png)
+<!-- ![Signup Screenshot](public/screenshots/signup.png) -->
+(D:\My Personal Projects\NoteNest\public\screenshorts\signup.png)
 
 📌 Notes Dashboard
 ![Dashboard Screenshot](public/screenshots/addnote.png)
