@@ -48,7 +48,7 @@ const NoteState = (props) => {
   };
 
   // ✅ Function to delete a note by ID
-  const deleteNote = async (id) => {
+  const deleteNote = async (id) => { 
     try {
       await fetch(`${host}/api/notes/deletenote/${id}`, {
         method: "DELETE",
