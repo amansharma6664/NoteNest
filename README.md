@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 📝 NoteNest
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NoteNest is a full-stack **MERN (MongoDB, Express, React, Node.js)** application that allows authenticated users to create, read, update, and delete personal notes securely.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- 🔐 **JWT-based authentication** (Signup / Login / Logout)
+- 📝 **Create, edit, and delete notes**
+- 🌐 **RESTful APIs**
+- 💾 **MongoDB database integration**
+- 💡 **User-specific notes only (private)**
+- ⚛️ **React UI with Context API**
+- 📱 **Responsive design with Bootstrap**
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🖼️ Screenshots
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> Add your screenshots here once UI is finalized:
 
-### `npm test`
+📌 Login Page 
+![Login Screenshot](public/screenshorts/login.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📌 Signup Page
+![Signup Screenshot](public/screenshots/signup.png)
 
-### `npm run build`
+📌 Notes Dashboard
+![Dashboard Screenshot](public/screenshots/addnote.png)
+![Dashboard Screenshot](public/screenshots/editnote.png)
+![Dashboard Screenshot](public/screenshots/notes.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📌 MongoDB Stored Data
+![Data Screenshot](public/screenshots/mongodbuser.png)
+![Data Screenshot](public/screenshots/mongodbnotes.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Folder Structure
 
-### `npm run eject`
+NoteNest/
+├── backend/ # Express + MongoDB + Auth API
+│ ├── config/
+│ ├── middleware/
+│ ├── models/
+│ ├── routes/
+│ ├── .env
+│ └── index.js
+│
+├── frontend/ # React frontend with routing + context
+│ ├── components/
+│ ├── context/
+│ ├── pages/
+│ ├── App.js
+│ └── index.js
+│
+├── .gitignore
+├── README.md
+└── package.json
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## ⚙️ Setup Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📌 Prerequisites
 
-## Learn More
+- Node.js (v16+)
+- MongoDB (local or Atlas)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 🔧 Backend Setup
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+cd backend
+npm install
 
-### Code Splitting
+Create a .env file inside /backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
 
-### Analyzing the Bundle Size
+Start the server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+💻 Frontend Setup
+cd frontend
+npm install
+npm start
 
-### Making a Progressive Web App
+🔒 Environment Variables
+Make sure the following variables are defined in /backend/.env:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Key	Description
+MONGO_URI	MongoDB connection string
+JWT_SECRET	Secret key for signing tokens
 
-### Advanced Configuration
+📦 Tech Stack
+Frontend: React.js, Bootstrap, Context API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Backend: Node.js, Express.js, MongoDB, JWT
 
-### Deployment
+Database: MongoDB (Mongoose)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Auth: JSON Web Token (JWT)
 
-### `npm run build` fails to minify
+✍️ Author
+Aman Kumar Sharma
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to connect and share your feedback!
+
+
+
