@@ -4,16 +4,15 @@
 /node_modules
 /Backend/node_modules
 /.pnp
-.pnp.js
-/Backend/.env
 
 # testing
 /coverage
 
-# productiongit status
+# production
 /build
 
 # misc
+.env
 .DS_Store
 .env.local
 .env.development.local
