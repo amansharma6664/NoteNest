@@ -3,40 +3,37 @@ import { useNavigate } from "react-router-dom";
 
 // Signup component handles user registration functionality
 const Signup = () => {
-  // useState to track user inputs
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "" });
-
-  // useNavigate hook for programmatic routing
   const navigate = useNavigate();
 
-  // Handle form submission
-  const handleSubmit = async (e) => { 
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Make a POST request to the backend signup API
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
-      method: "POST", 
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(credentials),
-    });
+    try {
+      const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/auth/createuser`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(credentials),
+      });
 
-    const json = await response.json();
+      const json = await response.json();
 
-    if (json.authToken) {
-      // Save token to local storage on successful signup
-      localStorage.setItem("token", json.authToken);
-      navigate("/"); // Redirect to homepage
-    } else {
-      alert("Invalid details");
+      if (response.ok && json.authToken) {
+        localStorage.setItem("token", json.authToken);
+        navigate("/"); // Redirect on success
+      } else {
+        alert(json.error || "Signup failed");
+      }
+    } catch (error) {
+      console.error("Signup Error:", error);
+      alert("An unexpected error occurred.");
     }
   };
 
-  // Update state when form fields change
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
 
-  // Signup form UI
   return (
     <div className="container d-flex justify-content-center align-items-center" style={{ minHeight: "100vh" }}>
       <div className="card p-4 shadow" style={{ width: "100%", maxWidth: "400px" }}>
