@@ -23,7 +23,7 @@ const Home = () => {
     } else {
       getNotes(); // Fetch notes from backend
     }
-  }, []);
+  }, [getNotes, navigate]);
 
   // Handle form submission for adding or editing a note
   const handleSubmit = (e) => {

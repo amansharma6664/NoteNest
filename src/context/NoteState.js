@@ -1,5 +1,5 @@
 // Import required hooks and context
-import { createContext, useState } from "react";
+import { useState } from "react";
 import noteContext from "./noteContext";
 
 // NoteState component provides all note-related logic and data to its children
