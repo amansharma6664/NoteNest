@@ -25,7 +25,7 @@ const Home = () => {
     }
   }, [getNotes, navigate]);
 
-  // Handle form submission for adding or editing a note
+  // Handle form submission for adding or editing a note 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!note.title || !note.description) return;

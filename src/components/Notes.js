@@ -12,7 +12,7 @@ const Notes = () => {
 
   // useEffect runs when component mounts
   useEffect(() => {
-    const token = localStorage.getItem('token'); // Check if token exists
+    const token = localStorage.getItem('token'); // Check if token exists 
     if (!token) {
       // If no token, redirect to login
       navigate('/login');

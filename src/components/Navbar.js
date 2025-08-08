@@ -7,7 +7,7 @@ const Navbar = () => {
   const handleLogout = () => {
     localStorage.removeItem('token'); // Remove JWT token from local storage
     navigate('/login'); // Redirect to login page
-  };
+  }; 
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light px-3">

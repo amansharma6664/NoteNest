@@ -10,12 +10,12 @@ const Signup = () => {
   const navigate = useNavigate();
 
   // Handle form submission
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { 
     e.preventDefault();
 
     // Make a POST request to the backend signup API
     const response = await fetch("http://localhost:5000/api/auth/createuser", {
-      method: "POST",
+      method: "POST", 
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(credentials),
     });

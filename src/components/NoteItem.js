@@ -11,7 +11,7 @@ const NoteItem = ({ note, onDelete, onEdit }) => {
 
         {/* Delete button: calls onDelete function with note's _id */}
         <button
-          className="btn btn-sm btn-danger mx-1"
+          className="btn btn-sm btn-danger mx-1" 
           onClick={() => onDelete(note._id)}
         >
           Delete

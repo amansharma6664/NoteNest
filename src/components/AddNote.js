@@ -11,7 +11,7 @@ const AddNote = () => {
 
   // Handle form submission
   const handleClick = (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault(); // Prevent default form submission behavior 
     addNote(note.title, note.description, note.tag); // Call addNote from context
     setNote({ title: '', description: '', tag: '' }); // Reset form fields
   };
