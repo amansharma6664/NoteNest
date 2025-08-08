@@ -20,17 +20,16 @@ NoteNest is a full-stack **MERN (MongoDB, Express, React, Node.js)** application
 ![Login Screenshot](public/screenshorts/login.png)
 
 📌 Signup Page
-<!-- ![Signup Screenshot](public/screenshots/signup.png) -->
-(D:\My Personal Projects\NoteNest\public\screenshorts\signup.png)
+![Signup Screenshot](public/screenshorts/signup.png)
 
 📌 Notes Dashboard
-![Dashboard Screenshot](public/screenshots/addnote.png)
-![Dashboard Screenshot](public/screenshots/editnote.png)
-![Dashboard Screenshot](public/screenshots/notes.png)
+![Dashboard Screenshot](public/screenshorts/addnote.png)
+![Dashboard Screenshot](public/screenshorts/editnote.png)
+![Dashboard Screenshot](public/screenshorts/notes.png)
 
 📌 MongoDB Stored Data
-![Data Screenshot](public/screenshots/mongodbuser.png)
-![Data Screenshot](public/screenshots/mongodbnotes.png)
+![Data Screenshot](public/screenshorts/mongodbuser.png)
+![Data Screenshot](public/screenshorts/mongodbnotes.png)
 
 ---
 
