@@ -12,7 +12,7 @@ const Login = () => {
   // Handles form submission
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevents default form reload
-
+ 
     // Send POST request to backend login API
     const response = await fetch(`${process.env.REACT_APP_API_BASE_URL}/api/auth/login`, {
       method: "POST",
