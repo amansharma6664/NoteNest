@@ -17,13 +17,14 @@ const Home = () => {
   const [editId, setEditId] = useState(null); // ID of note being edited
 
   // On component mount, redirect if not logged in, else fetch notes
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!localStorage.getItem("token")) {
       navigate("/login"); // Redirect to login if no auth token
     } else {
       getNotes(); // Fetch notes from backend
     }
-  }, [getNotes, navigate]);
+  }, []);
 
   // Handle form submission for adding or editing a note
   const handleSubmit = (e) => {
